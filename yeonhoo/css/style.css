@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.container {
+  position: relative; /* 부모 컨테이너를 상대적으로 설정 */
+  width: 80vw; /* 화면 크기에 맞게 조정 */
+  height: 80vh; /* 화면 크기에 맞게 조정 */
+}
+
+.background {
+  position: absolute; /* 롤체화면을 절대적으로 위치시키기 */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1; /* 배경을 가장 아래에 배치 */
+}
+
+.overlay {
+  position: absolute; /* 기물들을 절대적으로 위치시키기 */
+  width: 10%; /* 기물 크기 조정 */
+  height: auto;
+  z-index: 2; /* 기물들이 배경 위에 오도록 설정 */
+}
+
+/* 기물들 위치 조정 */
+#unit1 {
+  width: 20%;
+  top: 5%; /* 상단에서 0% 위치 */
+  left: 38%; /* 왼쪽에서 0% 위치 */
+}
+
+#unit2 {
+  width: 30%;
+  top: -45%; /* 상단에서 0% 위치 */
+  left: 8%; /* 왼쪽에서 0% 위치 */
+}
+
+#unit3 {
+  width: 10%;
+  top: 55%; /* 상단에서 0% 위치 */
+  left: 38%; /* 왼쪽에서 0% 위치 */
+}
+
+#unit4 {
+  width: 7%;
+  top: 58%; /* 상단에서 0% 위치 */
+  left: 30%; /* 왼쪽에서 0% 위치 */
+}
+
+#unit5 {
+  width: 7%;
+  top: 62%; /* 상단에서 0% 위치 */
+  left: 55%; /* 왼쪽에서 0% 위치 */
+}
+
+#unit6 {
+  width: 7%;
+  top: 58%; /* 상단에서 0% 위치 */
+  left: 80%; /* 왼쪽에서 0% 위치 */
+}
+
+#unit7 {
+  width: 5%;
+  top: 63%; /* 상단에서 0% 위치 */
+  left: 67%; /* 왼쪽에서 0% 위치 */
+}
+
+/* 자기소개 칸 (기본적으로 숨김 상태) */
+.introduction {
+  position: absolute;
+  top: 0; /* 화면의 맨 위에 배치 */
+  left: 70%;
+  transform: translateX(-50%); /* 가운데 정렬 */
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px; /* 자기소개 칸의 너비 설정 */
+  text-align: center; /* 내용 중앙 정렬 */
+  display: none; /* 처음에는 숨겨짐 */
+  z-index: 3; /* 자기소개 칸을 가장 위에 배치 */
+}
+
+.introduction h3 {
+  margin-bottom: 10px;
+}
+
+.introduction p {
+  font-size: 5px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
