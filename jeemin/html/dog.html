@@ -9,7 +9,9 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dog.css" />
     <script defer src="../js/main.js"></script>
+    <script defer src="../js/dog.js"></script>
   </head>
   <body>
     <header>
@@ -18,39 +20,33 @@
       </h1>
       <ul id="gnb">
         <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="./hobby.html">DOG</a></li>
+        <li><a href="./dog.html">DOG</a></li>
       </ul>
-      <!-- <ul id="sns">
-        <li>
-          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-envelope"></i></a>
-        </li>
-      </ul> -->
-      <div id="snb">
-        <a href="#" class="btn_menu"><i class="fa-solid fa-bars"></i></a>
-        <ul class="sub_menu">
-            <li><a href="./about.html">ABOUT</a></li>
-            <li><a href="./hobby.html">HOBBY</a></li>
-            <li><a href="./food.html">FOOD</a></li>
-            <li><a href="./dog.html">DOG</a></li>
-          <li>
-            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="#"><i class="fa-regular fa-envelope"></i></a>
-          </li>
-        </ul>
-      </div>
     </header>
     <!-- BACKGROUND VIDEO -->
     <!-- video, audio 들어가 있으면 보통 figure 태그 -->
-    <article>
-
-    </article>
-      </article>
+    <figure>
+      <div class="intro">
+        <h1>좋아하는 강아지를 소개합니다-!</h1>
+      </div>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="img1">
+            <img src="../img/image1.png" alt="Slide 1" />
+          </div>
+          <div class="img2">
+            <img src="../img/image2.png" alt="Slide 2" />
+          </div>
+          <div class="img3">
+            <img src="../img/image3.png" alt="Slide 3" />
+          </div>
+          <div class="img4">
+            <img src="../img/image4.png" alt="Slide 4" />
+          </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
     </figure>
     <!-- <footer>2025 by Genie in KB6</footer> -->
   </body>
